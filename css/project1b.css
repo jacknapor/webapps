@@ -143,7 +143,7 @@ padding-left: 0px;
 
 }
 
-.items{
+.menu{
 	background-color: #424242;
 	color: #E87722;
 
@@ -155,6 +155,10 @@ article{
 
 .links{
 	padding-top: 10px;
+}
+
+.item{
+	    color: #007bff;
 }
 
 
