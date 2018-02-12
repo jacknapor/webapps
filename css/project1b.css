@@ -4,6 +4,7 @@ body{
 	text-align: center;
 	background-color: #003865;
 	font-family: 'Domine', serif;
+	padding-top: 70px;
 
 }
 
@@ -140,7 +141,11 @@ padding-left: 0px;
 
 }
 
+.items{
+	background-color: #0082BA;
+	color: #E87722;
 
+}
 
 
 
