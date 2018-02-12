@@ -114,6 +114,7 @@ height: 80%;
 }
 .info{
 	text-align: left;
+	font-size: 35px;
 
 
 }
@@ -125,7 +126,7 @@ padding-left: 0px;
 
 }
 .name{
-	margin-top: 0px;
+	margin-bottom: 0px;
 }
 
 .pad{
