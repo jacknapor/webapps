@@ -33,7 +33,7 @@ p{
 }
 
 a:visited {
-    color: #59CBE8;
+    color: #BA55D3;
     font-size: 20px;
 }
 
@@ -76,8 +76,10 @@ height: 80%;
 	border-style: solid;
 	border-color: black;
 	border-width:1px;
-	background-color:purple;
-	margin-bottom: 20px;
+	background-color:#424242;
+	margin-bottom: 50px;
+	padding-bottom: 10px;
+
 	
 	
 }
@@ -86,7 +88,7 @@ height: 80%;
 	border-style: solid;
 	border-color: black;
 	border-width:1px;
-	margin-bottom: 20px;
+	margin-bottom: 5px;
 	color:#E87722;
 	font-size: 40px;
 	background-color: #0082BA;
@@ -142,9 +144,17 @@ padding-left: 0px;
 }
 
 .items{
-	background-color: #0082BA;
+	background-color: #424242;
 	color: #E87722;
 
+}
+
+article{
+	width:100%;
+}
+
+.links{
+	padding-top: 10px;
 }
 
 
