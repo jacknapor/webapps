@@ -10,10 +10,38 @@ fetch('https://dog.ceo/api/breeds/image/random')
   });
 
 
+
 fetch('https://dog.ceo/api/breeds/list/all')
 	.then(function(response){
-		console.log(response)});
+		return response.json()})
+	.then(function(response){
+		console.log(response.message)
+	});
 
+fetch('https://dog.ceo/api/breed/retriever/golden/images/random')
+  .then(function(response){
+    return response.json()
+  })
+  .then(function(myJson){
+    var myImage = document.getElementById('GoldenRetriever');
+    myImage.src=myJson.message;
+  });
 
-var arr= fetch('https://dog.ceo/api/breeds/list').then(resp => resp.json()).then(j => return j.message);
-console.log(arr);
+  fetch('https://dog.ceo/api/breed/labrador/images/random')
+  .then(function(response){
+    return response.json()
+  })
+  .then(function(myJson){
+    var myImage = document.getElementById('Lab');
+    myImage.src=myJson.message;
+  });
+
+  fetch('https://dog.ceo/api/breed/germanshepherd/images/random')
+  .then(function(response){
+    return response.json()
+  })
+  .then(function(myJson){
+    var myImage = document.getElementById('GermanShepherd');
+    myImage.src=myJson.message;
+  });
+
