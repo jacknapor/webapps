@@ -2,9 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import DogBreedImgSelect from './t';
+import DogBreedsSelect from './t';
+import CourseDisplay from './t2';
 import registerServiceWorker from './registerServiceWorker';
 import 'bootstrap/dist/css/bootstrap.css';
 
-ReactDOM.render(<DogBreedImgSelect />, document.getElementById('root'));
+ReactDOM.render(<CourseDisplay />, document.getElementById('root'));
 registerServiceWorker();
