@@ -14,7 +14,7 @@ constructor(props){
     
   }
  handleSelection(event){
-    console.log("Selction: ", event.target.value)
+  
     this.setState({selectedDepartment:event.target.value})
     this.props.onDepartmentChange(event.target.value)
   }
@@ -56,7 +56,6 @@ constructor(props){
     
   }
 handleSelection(event){  
-    console.log("Selction: ", event.target.value)
     this.setState({selectedYear:event.target.value})
     this.props.onYearChange(event.target.value)
   }
@@ -80,7 +79,7 @@ constructor(props){
     
   }
 handleSelection(event){
-    console.log("Selction: ", event.target.value)
+    
     this.setState({selectedSemester:event.target.value})
     this.props.onSemesterChange(event.target.value)
   }
@@ -190,7 +189,7 @@ constructor(props){
     
   }
 	handleDepartmentChange(event){
-	var x= 'http://eg.bucknell.edu:48484/q?'
+	var x= 'https://www.eg.bucknell.edu/~amm042/service/q?'
 	this.setState({department:event},() => {
         if(this.state.semester!==null && this.state.semester!=="unselected"){ 
 			if(x.slice(-1)==="?"){
@@ -260,7 +259,7 @@ constructor(props){
 
 }
 	handleYearChange(event){
-	var x= 'http://eg.bucknell.edu:48484/q?'
+	var x= 'https://www.eg.bucknell.edu/~amm042/service/q?'
 this.setState({year:event},() => {
         if(this.state.semester!==null && this.state.semester!=="unselected"){ 
 			if(x.slice(-1)==="?"){
@@ -323,7 +322,7 @@ this.setState({year:event},() => {
             this.setState({list:[{Course:"No available courses."}]})}
           }
         })	
-		.catch(err=>console.log("Couldn't fetch dog breeds", err))
+		.catch(err=>console.log("Couldn't fetch", err))
         }
     );
 
@@ -333,7 +332,7 @@ this.setState({year:event},() => {
 
 
 	handleSemesterChange(event){
-	var x= 'http://eg.bucknell.edu:48484/q?'
+	var x= 'https://www.eg.bucknell.edu/~amm042/service/q?'
 	this.setState({semester:event},() => {
        if(this.state.semester!==null && this.state.semester!=="unselected"){ 
 			if(x.slice(-1)==="?"){
@@ -405,7 +404,7 @@ this.setState({year:event},() => {
 
 }
 handleCCCChange(event){
-	var x= 'http://eg.bucknell.edu:48484/q?'
+	var x= 'https://www.eg.bucknell.edu/~amm042/service/q?'
 	this.setState({ccc:event},() => { 
 		
 		if(this.state.semester!==null && this.state.semester!=="unselected"){ 
@@ -477,7 +476,7 @@ handleCCCChange(event){
 
 handleTimeSubmit(event){
 	
-	var x= 'http://eg.bucknell.edu:48484/q?'
+	var x= 'https://www.eg.bucknell.edu/~amm042/service/q?'
 	this.setState({time:event},() =>{ 
 	if(this.state.semester!==null && this.state.semester!=="unselected"){ 
 			if(x.slice(-1)==="?"){
@@ -537,7 +536,7 @@ handleTimeSubmit(event){
 });
 }
 handleRoomSubmit(event){
-	var x= 'http://eg.bucknell.edu:48484/q?';
+	var x= 'https://www.eg.bucknell.edu/~amm042/service/q?';
 	this.setState({room:event},()=>{ 
 if(this.state.semester!==null && this.state.semester!=="unselected"){ 
 			if(x.slice(-1)==="?"){
@@ -605,7 +604,7 @@ if(this.state.semester!==null && this.state.semester!=="unselected"){
 
 componentDidMount(){
 
-	var x= 'http://eg.bucknell.edu:48484/q?Semester=' + this.state.semester +'&Year=' +this.state.year+ '&Department=' + this.state.department+ '&limit=100' 
+	var x= 'https://www.eg.bucknell.edu/~amm042/service/q?Semester=' + this.state.semester +'&Year=' +this.state.year+ '&Department=' + this.state.department+ '&limit=100' 
 	console.log(x)
 
 
